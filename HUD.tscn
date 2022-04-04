@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/fonts/VT323.tres" type="DynamicFont" id=1]
+[ext_resource path="res://HUD.gd" type="Script" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ReferenceRect" type="ReferenceRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 460.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreLabel" type="Label" parent="ReferenceRect"]
+anchor_left = 0.71875
+anchor_right = 0.71875
+anchor_bottom = 0.441304
+margin_left = -24.0
+margin_right = 376.0
+margin_bottom = 200.0
+rect_scale = Vector2( 0.119969, 0.122315 )
+custom_fonts/font = ExtResource( 1 )
+text = "SCORE
+00000"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="PowerLabel" type="Label" parent="ReferenceRect"]
+margin_left = 264.0
+margin_right = 664.0
+margin_bottom = 403.0
+rect_scale = Vector2( 0.120005, 0.120005 )
+custom_fonts/font = ExtResource( 1 )
+text = "POWER
+ 100"
+__meta__ = {
+"_edit_use_anchors_": false
+}

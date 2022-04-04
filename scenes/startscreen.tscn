@@ -1,0 +1,86 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/startscreen.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/VT323.tres" type="DynamicFont" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -33.0
+margin_top = -37.0
+margin_right = 1070.0
+margin_bottom = 651.0
+rect_pivot_offset = Vector2( 498, 452 )
+color = Color( 0.207843, 0.00784314, 0.00784314, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Button" parent="."]
+margin_left = 156.0
+margin_top = 232.0
+margin_right = 888.0
+margin_bottom = 438.0
+rect_scale = Vector2( 0.342632, 0.339654 )
+custom_fonts/font = ExtResource( 2 )
+text = "Spaceship
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 109.0
+margin_right = 909.0
+margin_bottom = 200.0
+rect_scale = Vector2( 0.983866, 0.983866 )
+custom_fonts/font = ExtResource( 2 )
+text = "Crisis Bot"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Button" parent="."]
+margin_left = 601.0
+margin_top = 232.0
+margin_right = 1333.0
+margin_bottom = 438.0
+rect_scale = Vector2( 0.342632, 0.339654 )
+custom_fonts/font = ExtResource( 2 )
+text = "Submarine
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Button" parent="."]
+margin_left = 156.0
+margin_top = 401.0
+margin_right = 888.0
+margin_bottom = 607.0
+rect_scale = Vector2( 0.342632, 0.339654 )
+custom_fonts/font = ExtResource( 2 )
+text = "Arctic
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Button" parent="."]
+margin_left = 601.0
+margin_top = 401.0
+margin_right = 1333.0
+margin_bottom = 607.0
+rect_scale = Vector2( 0.342632, 0.339654 )
+custom_fonts/font = ExtResource( 2 )
+text = "Sci Lab
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Label2" to="." method="_on_Label2_pressed"]
+[connection signal="pressed" from="Label3" to="." method="_on_Label3_pressed"]
+[connection signal="pressed" from="Label4" to="." method="_on_Label4_pressed"]
+[connection signal="pressed" from="Label5" to="." method="_on_Label5_pressed"]
